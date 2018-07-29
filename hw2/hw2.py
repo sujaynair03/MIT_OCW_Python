@@ -12,25 +12,26 @@ from random import randint
 # 
 # def f2(x):
     # return x + 1
-# def rock_paper_scissors(rock, paper, scissors)
-# opponent = randint(rock, paper, scissors)
-# if player == opponent:
-    # print("Tie!")
-# elif player == "Rock":
-    # if opponent == "Paper":
-        # print("You lose!")
-    # else:
-        # print("You win!")
-# elif player == "Paper":
-    # if opponent == "Scissors":
-        # print("You lose!")
-    # else:
-        # print("You win!")
-# elif player == "Scissors":
-    # if opponent == "Rock":
-        # print("You lose!")
-    # else:
-        # print("You win!")
+def rock_paper_scissors(player):
+	opt = ["Rock", "Paper", "Scissors"]
+	opponent = opt[randint(0,2)]
+	if player == opponent:
+		return "Tie!"
+	elif player == "Rock":
+		if opponent == "Paper":
+			return "You lose!"
+		else:
+			return "You win!"
+		elif player == "Paper":
+			if opponent == "Scissors":
+				return "You lose!"
+			else:
+				return "You win!"
+			elif player == "Scissors":
+				if opponent == "Rock":
+					return "You lose!"
+				else:
+					return "You win!"
 
 # **********  Exercise 2.1 ********** 
 
