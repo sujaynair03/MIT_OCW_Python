@@ -66,11 +66,16 @@ print is_divisible(18, 7)  # This should return False
 
 # ********** Exercise 2.3 ********** 
 
-## 1 - multadd function
-##### YOUR CODE HERE #####
+def multadd(a, b, c):
+	return a*b+c
+# print (multadd(.5, math.cos(math.pi()/4), math.sin(math.pi()/4)))
 
 ## 2 - Equations
-##### YOUR CODE HERE #####
+def multadd(a, b, c):
+	return a*b+c
+print (multadd(.5, math.cos(math.pi/4), math.sin(math.pi/4)))
+
+
 
 
 # Test Cases
@@ -83,8 +88,10 @@ print is_divisible(18, 7)  # This should return False
 # print ceiling_test
 
 ## 3 - yikes function
-##### YOUR CODE HERE #####
-
+def yikes(x):
+	e_neg_x = math.e**(-x)
+	return multadd(x,e_neg_x, math.sqrt(multadd(-1, e_neg_x, 1)))
+print(yikes(5))
 
 # Test Cases
 # x = 5
