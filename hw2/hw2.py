@@ -118,7 +118,7 @@ def roll_dice(sides, dice):
 		rand_side = randint(0, sides)
 		print (rand_side)
 	return "That's all!"
-print (roll_dice(6, 3))
+print(roll_dice(6, 3))
 
 
 # Test Cases
@@ -128,7 +128,13 @@ print (roll_dice(6, 3))
 # ********** Exercise 2.5 **********
 
 # code for roots function
-##### YOUR CODE HERE #####   
+def roots(a, b, c):
+	discrim = b**2-4*a*c
+	if discrim < 0:
+		return "error complex bofa"
+	return ((((-b)+(math.sqrt(discrim)))/2*a)), ((((-b)-(math.sqrt(discrim)))/2*a))
+print (roots(142, 145, 12))
+
 
 # Test Cases
 ##### YOUR CODE HERE #####   
