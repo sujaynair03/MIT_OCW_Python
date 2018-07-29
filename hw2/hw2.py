@@ -22,16 +22,18 @@ def rock_paper_scissors(player):
 			return "You lose!"
 		else:
 			return "You win!"
-		elif player == "Paper":
-			if opponent == "Scissors":
-				return "You lose!"
-			else:
-				return "You win!"
-			elif player == "Scissors":
-				if opponent == "Rock":
-					return "You lose!"
-				else:
-					return "You win!"
+	elif player == "Paper":
+		if opponent == "Scissors":
+			return "You lose!"
+		else:
+			return "You win!"
+	elif player == "Scissors":
+		if opponent == "Rock":
+			return "You lose!"
+		else:
+			return "You win!"
+print (rock_paper_scissors("Rock"))
+
 
 # **********  Exercise 2.1 ********** 
 
@@ -43,10 +45,6 @@ def rock_paper_scissors(player):
 
 def is_divisible(m, n):
 	if m % n == 0:
-		return True
-	else:
-		return False
-	if n % m == 0:
 		return True
 	else:
 		return False
@@ -109,11 +107,12 @@ print (rand_divis_3())
 ## 2 - roll_dice function - remember that a die's lowest number is 1;
                             #its highest is the number of sides it has
 def roll_dice(sides, dice):
-	sides = randint(1, 6)
-	dice = randint(1, 3)
-	return
+	for i in range(dice):
+		rand_side = randint(0, sides)
+		print (rand_side)
+	return "That's all!"
 print (roll_dice(6, 3))
-print ("That's all!")
+
 
 # Test Cases
 ##### YOUR CODE HERE #####                            
